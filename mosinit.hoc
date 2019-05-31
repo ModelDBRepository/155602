@@ -1,0 +1,2 @@
+load_file("nrngui.hoc")
+load_file("fixed\ rseed\ Control\ -74\ spill_\ tonic\ 10uS\ with\ mossy\ kill.hoc")
