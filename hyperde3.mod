@@ -99,11 +99,11 @@ INITIAL {
 	trates(v)
 	
 	hyf = hyfinf
-      hys = hysinf
+	hys = hysinf
 	hyhtf = hyhtfinf
 	hyhts = hyhtsinf
 	VERBATIM
-	return 0;
+	return;
 	ENDVERBATIM
 }
 
