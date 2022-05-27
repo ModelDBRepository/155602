@@ -87,11 +87,11 @@ INITIAL {
 	
 	m = minf
 	h = hinf
-      nf = nfinf
-      ns = nsinf
+	nf = nfinf
+	ns = nsinf
 	
 	VERBATIM
-	return 0;
+	return;
 	ENDVERBATIM
 }
 
