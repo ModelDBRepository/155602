@@ -1065,38 +1065,48 @@ objref rdmc2gc1, rdmc2gc2, rdmc2bc, rdmc2mc, rdmc2mc1, rdmc2hc, rdhc2gc, rdhc2bc
 rseed=53641.34
 //************************************GC***********************************************
 rdgc2bc = new Random(rseed)			// use for syn.connections 
+rdgc2bc.Random123()
 proc new_rdgc2bc() {rdgc2bc.discunif(-1,1)}
 new_rdgc2bc()
 rdgc2mc = new Random(rseed)			// use for syn.connections 
+rdgc2mc.Random123()
 proc new_rdgc2mc() {rdgc2mc.discunif(0,2)}
 new_rdgc2mc()
 rdgc2hc = new Random(rseed)			// use for syn.connections 
+rdgc2hc.Random123()
 proc new_rdgc2hc() {rdgc2hc.discunif(-2 , 2)}
 new_rdgc2hc()
 rdgc2gc = new Random(rseed)			// use for syn.connections 
+rdgc2gc.Random123()
 proc new_rdgc2gc() {rdgc2gc.discunif(-50, 50)}
 new_rdgc2gc()
 
 //************************************BC***********************************************
 rdbc2gc = new Random(rseed)			// use for syn.connections 
+rdbc2gc.Random123()
 proc new_rdbc2gc() {rdbc2gc.discunif(-70, 70)}
 new_rdbc2gc()
 rdbc2bc = new Random(rseed)			// use for syn.connections 
+rdbc2bc.Random123()
 proc new_rdbc2bc() {rdbc2bc.discunif(-1, 1)}
 new_rdbc2bc()
 rdbc2mc = new Random(rseed)			// use for syn.connections 
+rdbc2mc.Random123()
 proc new_rdbc2mc() {rdbc2mc.discunif(-3, 3)}
 new_rdbc2mc()
 rdgap = new Random(rseed)                            
+rdgap.Random123()
 proc new_rdgap() {rdgap.discunif(-1,1)}    // use for gap junc
 new_rdgap()
 rddend = new Random(rseed)                            
+rddend.Random123()
 proc new_rddend() {rddend.discunif(0,3)}    
 new_rddend()
 
 
 //*************************************MC********************************************
 deadMC = new Random(rseed)			// use for syn.connections 
+deadMC.Random123()
 proc new_deadMC() {deadMC.discunif(ngcell+nbcell, ngcell+nbcell+nmcell-1)}
 new_deadMC()
 
@@ -1107,25 +1117,32 @@ killMC.x[i] = MC
 } else {i -=1}
 }
 rdmc2gc1 = new Random(rseed)			// use for syn.connections 
+rdmc2gc1.Random123()
 proc new_rdmc2gc1() {rdmc2gc1.discunif(25, 175)}
 new_rdmc2gc1()
 rdmc2gc2 = new Random(rseed)			// use for syn.connections 
+rdmc2gc2.Random123()
 proc new_rdmc2gc2() {rdmc2gc2.discunif(-175, -25)}
 new_rdmc2gc2()
 rdmc2bc = new Random(rseed)			// use for syn.connections 
+rdmc2bc.Random123()
 proc new_rdmc2bc() {rdmc2bc.discunif(-3,3)}
 new_rdmc2bc()
 rdmc2mc = new Random(rseed)			// use for syn.connections 
+rdmc2mc.Random123()
 proc new_rdmc2mc() {rdmc2mc.discunif(ngcell+nbcell, ngcell+nbcell+nmcell-1)}
 new_rdmc2mc()
 rdmc2mc1 = new Random(rseed)			// use for syn.connections 
+rdmc2mc1.Random123()
 proc new_rdmc2mc1() {rdmc2mc1.discunif(-3, 3)}
 new_rdmc2mc1()
 rdmc2hc = new Random(rseed)			// use for syn.connections 
+rdmc2hc.Random123()
 proc new_rdmc2hc() {rdmc2hc.discunif(-2, 2)}
 new_rdmc2hc()
 //*************************************HC********************************************
 deadHC = new Random(rseed)			// use for syn.connections 
+deadHC.Random123()
 proc new_deadHC() {deadHC.discunif(ngcell+nbcell+nmcell, ngcell+nbcell+nmcell+nhcell-1)}
 new_deadHC()
 
@@ -1137,22 +1154,27 @@ killHC.x[i] = HC
 } else {i -=1}
 }
 rdhc2gc = new Random(rseed)			// use for syn.connections 
+rdhc2gc.Random123()
 proc new_rdhc2gc() {rdhc2gc.discunif(-130, 130)}
 new_rdhc2gc()
 rdhc2bc = new Random(rseed)			// use for syn.connections 
+rdhc2bc.Random123()
 proc new_rdhc2bc() {rdhc2bc.discunif(-2, 2)}
 new_rdhc2bc()
 rdhc2mc = new Random(rseed)			// use for syn.connections 
+rdhc2mc.Random123()
 proc new_rdhc2mc() {rdhc2mc.discunif(-2, 2)}
 new_rdhc2mc()
 
 //*********************************************************************************
 
 rdsyna = new Random(rseed)		// initialize random distr.
+rdsyna.Random123()
 proc new_rdsyna() {rdsyna.discunif(0, 1)}
 new_rdsyna()
 
 rdsynb = new Random(rseed)		// initialize random distr.
+rdsynb.Random123()
 proc new_rdsynb() {rdsynb.discunif(0, 3)}
 new_rdsynb()
 
